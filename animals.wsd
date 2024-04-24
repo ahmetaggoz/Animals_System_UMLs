@@ -1,0 +1,17 @@
+@startuml
+title Animasl System
+class Animals {
+    -name: string
+    -age: int
+    -weight: int
+    +getDosage (): int
+    +getFeedSchedule (Date time): DateTime
+}
+class Cats extends Animals {
+    +getFeedSchedule (Date time): DateTime
+}
+class Rodents extends Animals{
+    +getFeedSchedule (Date time): DateTime
+}
+hide empty member
+@enduml
